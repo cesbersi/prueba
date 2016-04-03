@@ -1,2 +1,0 @@
-worker: java $JAVA_OPTS -cp target/classes:target/dependency/* Worker
-web: java $JAVA_OPTS -cp target/classes:target/dependency/* Main
