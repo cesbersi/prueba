@@ -15,12 +15,12 @@ import org.apache.catalina.webresources.StandardRoot;
 import org.apache.tomcat.util.scan.Constants;
 import org.apache.tomcat.util.scan.StandardJarScanFilter;
 
-public class Main {
+public class Start {
 
     private static File getRootFolder() {
         try {
             File root;
-            String runningJarPath = Main.class.getProtectionDomain().getCodeSource().getLocation().toURI().getPath().replaceAll("\\\\", "/");
+            String runningJarPath = Start.class.getProtectionDomain().getCodeSource().getLocation().toURI().getPath().replaceAll("\\\\", "/");
             int lastIndexOf = runningJarPath.lastIndexOf("/target/");
             if (lastIndexOf < 0) {
                 root = new File("");
@@ -56,7 +56,7 @@ public class Main {
         }
         StandardContext ctx = (StandardContext) tomcat.addWebapp("", webContentFolder.getAbsolutePath());
         //Set execution independent of current thread context classloader (compatibility with exec:java mojo)
-        ctx.setParentClassLoader(Main.class.getClassLoader());
+        ctx.setParentClassLoader(Start.class.getClassLoader());
 
         //Disable TLD scanning by default
         if (System.getProperty(Constants.SKIP_JARS_PROPERTY) == null && System.getProperty(Constants.SKIP_JARS_PROPERTY) == null) {
