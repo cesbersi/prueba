@@ -87,7 +87,7 @@
                     <assembleDirectory>target</assembleDirectory>
                     <programs>
                         <program>
-                            <mainClass>launch.Main</mainClass>
+                            <mainClass>com.prueba.configuration.Main</mainClass>
                             <name>webapp</name>
                         </program>
                     </programs>
