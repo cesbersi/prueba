@@ -110,7 +110,7 @@
                     <assembleDirectory>target</assembleDirectory>
                     <programs>
                         <program>
-                            <mainClass>Start</mainClass>
+                            <mainClass>com.prueba.launch.Start</mainClass>
                             <name>webapp</name>
                         </program>
                     </programs>

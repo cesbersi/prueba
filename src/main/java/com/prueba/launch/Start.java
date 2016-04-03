@@ -1,4 +1,4 @@
-package launch;
+package com.prueba.launch;
 
 import java.io.File;
 import java.net.URISyntaxException;
