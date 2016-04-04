@@ -5,7 +5,7 @@ App.factory('UserService', ['$http', '$q', function($http, $q){
 	return {
 		
 			fetchAllUsers: function() {
-					return $http.get('http://localhost:8080/user/')
+					return $http.get('https://gentle-anchorage-67497.herokuapp.com/user/')
 							.then(
 									function(response){
 										return response.data;
