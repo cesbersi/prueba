@@ -32,8 +32,8 @@ public class UserController {
         String birthDate = request.getParameter("birthDate");
         String salary = request.getParameter("salary");
         String email = request.getParameter("email");
-        String departament = request.getParameter("departament");
-        String city = request.getParameter("city");        
+        String departament = request.getParameter("city").split("-")[0];
+        String city = request.getParameter("city").split("-")[1];        
         
 
         User user = new User(0, username, "", name, lastname, civilStatus, birthDate, salary, email, departament, city);

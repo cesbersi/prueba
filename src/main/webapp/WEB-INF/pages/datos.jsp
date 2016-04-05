@@ -90,7 +90,7 @@
                             <div class="form-group col-md-12">
                                 <label class="col-md-2 control-lable" for="file">Sueldo</label>
                                 <div class="col-md-7">
-                                    <input type="text"  name="salary" class="form-control input-sm" placeholder="Ingrese su sueldo"/>
+                                    <input type="number" min="1" name="salary" class="form-control input-sm" placeholder="Ingrese su sueldo"/>
                                 </div>
                             </div>
                         </div>
@@ -113,7 +113,9 @@
                             <div class="form-group col-md-12">
                                 <label class="col-md-2 control-lable" for="file">Departamento</label>
                                 <div class="col-md-7">
-                                    <input type="text"  name="departament" class="form-control input-sm" placeholder="Seleccione departamento"/>
+                                    <select  class="form-control input-sm" name="departament" ng-model="dep" >                                        
+                                        <option ng-repeat="departament in departaments" value="{{departament}}">{{departament.name}}</option>
+                                    </select>                                    
                                 </div>
                             </div>
                         </div>
@@ -122,15 +124,16 @@
                             <div class="form-group col-md-12">
                                 <label class="col-md-2 control-lable" for="file">Ciudad</label>
                                 <div class="col-md-7">
-                                    <input type="text"  name="city" class="form-control input-sm" placeholder="Seleccione ciudad"/>
+                                    <select class="form-control input-sm"  name="city" ng-disabled="!dep" ng-model="suburbs" >                                    
+                                        <option ng-repeat="city in parJson(dep).data" value="{{parJson(dep).name}}-{{city}}">{{city}}</option>
+                                    </select>                                    
                                 </div>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="form-actions floatRight">
-                                <input type="submit"  value="Aceptar" class="btn btn-primary btn-sm" >
-                                <button type="button" ng-click="ctrl.reset()" class="btn btn-warning btn-sm" ng-disabled="myForm.$pristine">Reset Form</button>
+                                <input type="submit"  value="Aceptar" class="btn btn-primary btn-sm" >                                
                             </div>
                         </div>
                     </form>

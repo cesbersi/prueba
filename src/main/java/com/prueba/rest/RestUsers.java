@@ -35,5 +35,10 @@ public class RestUsers {
         }
         return new ResponseEntity<List<User>>(users, HttpStatus.OK);
     }   
+    
+    @RequestMapping(value = "/version/", method = RequestMethod.GET)
+    public ResponseEntity<String> version() {        
+        return new ResponseEntity<String>("Versión 1.0 Spring MVC - Angular", HttpStatus.OK);
+    }   
  
 }
