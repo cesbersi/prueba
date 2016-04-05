@@ -124,8 +124,8 @@
                             <div class="form-group col-md-12">
                                 <label class="col-md-2 control-lable" for="file">Ciudad</label>
                                 <div class="col-md-7">
-                                    <select class="form-control input-sm"  name="city" ng-disabled="!dep" ng-model="suburbs" >                                    
-                                        <option ng-repeat="city in parJson(dep).data" value="{{parJson(dep).name}}-{{city}}">{{city}}</option>
+                                    <select class="form-control input-sm"  name="city" ng-disabled="!dep" ng-model="suburbs" >                                                                            
+                                        <option ng-repeat="city in parJson(dep).cities" value="{{parJson(dep).name}}-{{city}}">{{city}}</option>
                                     </select>                                    
                                 </div>
                             </div>

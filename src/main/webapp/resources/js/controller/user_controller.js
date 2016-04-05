@@ -1,22 +1,33 @@
 'use strict';
 
 App.controller('UserController', ['$scope', 'UserService', function ($scope, UserService) {
-        
-      
+
+
         $scope.parJson = function (json) {
             return angular.fromJson(json);
         };
-        
-        $scope.departaments = [
-            {
-                name: "Santander",
-                data: ["Bucaramanga", "Sangil", "Socorro"]
-            },
-            {
-                name: "Cundinamarca",
-                data: ["Bogota", "Tenjo", "Madrid", "Sopo", "Tunja"]
-            }
-        ];
+
+//        $scope.departaments = [
+//            {
+//                name: "Santander",
+//                data: ["Bucaramanga", "Sangil", "Socorro"]
+//            },
+//            {
+//                name: "Cundinamarca",
+//                data: ["Bogota", "Tenjo", "Madrid", "Sopo", "Tunja"]
+//            }
+//        ];
+
+        UserService.departments()
+                .then(
+                        function (d) {
+                            $scope.departaments = d;
+                        },
+                        function (errResponse) {
+                            console.error('Error while fetching Currencies');
+                        }
+                );
+
 
 //        
 
@@ -33,6 +44,6 @@ App.controller('UserController', ['$scope', 'UserService', function ($scope, Use
 //        };//
 //        
 
-     
+
 
     }]);
