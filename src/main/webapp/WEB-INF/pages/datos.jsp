@@ -127,8 +127,7 @@
 
                         <div class="row">
                             <div class="form-actions floatRight">
-                                <input type="submit"  value="Aceptar" class="btn btn-primary btn-sm" >                                
-                                <a href="/">Salir</a>
+                                <input type="submit"  value="Aceptar" class="btn btn-primary btn-sm" >                                                                
                             </div>
                         </div>
                     </form>

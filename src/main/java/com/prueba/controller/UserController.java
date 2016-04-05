@@ -46,7 +46,7 @@ public class UserController {
     ModelAndView back(HttpServletRequest request, HttpServletResponse response)
             throws Exception {       
 
-        return new ModelAndView("datos", "userReg","");
+        return new ModelAndView("index", "userReg","");
 
     }
 }
