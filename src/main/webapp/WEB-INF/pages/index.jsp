@@ -19,13 +19,13 @@
                             <div class="control-group">
                                 <label class="control-label">Usuario</label>
                                 <div class="controls">
-                                    <input type="text" class="form-control input-sm" name="user" id="user" title="Usuario" value="">
+                                    <input type="text" class="form-control input-sm" name="user" id="user" title="Usuario" value="" required>                                    
                                 </div>
                             </div>
                             <div class="control-group">
                                 <label class="control-label">Contraseña</label>
                                 <div class="controls">
-                                    <input type="password" class="form-control input-sm"  name="password" id="password" title="Contraseña" value="">
+                                    <input type="password" class="form-control input-sm"  name="password" id="password" title="Contraseña" value="" required>                                    
                                 </div>
                             </div>
                             <legend></legend>                            

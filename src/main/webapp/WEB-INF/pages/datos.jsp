@@ -44,9 +44,7 @@
                                 <label class="col-md-2 control-lable" for="file">Nombre</label>
                                 <div class="col-md-7">
                                     <input type="text" name="name" class="form-control input-sm"  placeholder="Ingrese su nombre" required />
-                                    <div class="has-error" ng-show="myForm.$dirty">
-                                        <span ng-show="myForm.uname.$error.required">Este campo es obligatorio</span>                                        
-                                    </div>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -57,9 +55,7 @@
                                 <label class="col-md-2 control-lable" for="file">Apellido</label>
                                 <div class="col-md-7">
                                     <input type="text" name="lastname" class="form-control input-sm" required placeholder="Ingrese su apellido"/>
-                                    <div class="has-error" ng-show="myForm.$dirty">
-                                        <span ng-show="myForm.uname.$error.required">Este campo es obligatorio</span>                                        
-                                    </div>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -102,10 +98,7 @@
                                 <label class="col-md-2 control-lable" for="file">Email</label>
                                 <div class="col-md-7">
                                     <input type="email"  name="email" class="email form-control input-sm" placeholder="Ingrese su email" required/>
-                                    <div class="has-error" ng-show="myForm.$dirty">
-                                        <span ng-show="myForm.email.$error.required">This is a required field</span>
-                                        <span ng-show="myForm.email.$invalid">This field is invalid </span>
-                                    </div>
+                                   
                                 </div>
                             </div>
                         </div>
