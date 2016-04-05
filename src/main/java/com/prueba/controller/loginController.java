@@ -20,10 +20,11 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping("/user/validate.htm")
 public class loginController {
 
+    
     private loginService login = new loginServiceImp();
 
     @RequestMapping(method = RequestMethod.POST)
-    ModelAndView add(HttpServletRequest request, HttpServletResponse response)
+    ModelAndView login(HttpServletRequest request, HttpServletResponse response)
             throws Exception {
 //		Employee employee = new Employee();
 
@@ -32,10 +33,6 @@ public class loginController {
 
         User validateLogin = login.validateLogin(user, password);
 
-//		employee.setEmail(email);
-//		employee.setFirstName(firstName);
-//		employee.setLastName(lastName);
-        //return new ModelAndView("employeesuccess", "employee",null);
         if (validateLogin == null) {
             return new ModelAndView("index", "userError", "Datos de ingreso no válidos");
         } else {

@@ -33,11 +33,17 @@ public class DepartmentServiceImp implements DepartmentService {
         List<Department> departments = new ArrayList<Department>();
         List<String> citiesSan = new ArrayList<String>();
         citiesSan.add("Bucaramanga");
+        citiesSan.add("Barbosa");
         citiesSan.add("Cucuta");
+        citiesSan.add("Socorro");
+        citiesSan.add("San Gil");
         departments.add(new Department(0, "Santander", citiesSan));      
         
          List<String> citiesCun = new ArrayList<String>();
         citiesCun.add("Bogota");
+        citiesCun.add("Funza");
+        citiesCun.add("Madrid");
+        citiesCun.add("Sopo");
         citiesCun.add("Tunja");
         departments.add(new Department(0, "Cundinamarca", citiesCun));
 

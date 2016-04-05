@@ -31,12 +31,13 @@
         <link href="/resources/css/app.css" rel="stylesheet"></link>
     </head>
     <body ng-app="myApp" class="ng-cloak">
-        <div class="generic-container" ng-controller="UserController as ctrl">
+        <div class="generic-container" ng-controller="UserController as ctrl">            
             <div class="panel panel-default">
-                <div class="panel-heading"><span class="lead">Registro de Usuario:( ${userSuccess.username} )</span></div>
+                <div class="panel-heading"><span class="lead">Registro de Usuario:( ${userSuccess.username} ) - {{version.version}}</span></div>
                 <div class="formcontainer">
-                    <form action='/user/userReg.htm'  method="post"  name="myForm" class="form-horizontal">
-                        <input type="hidden" ng-model="ctrl.user.id" />
+                    <form action='/user/userReg.htm'  method="post"  name="myForm" class="form-horizontal" >
+                        <!--<input type="hidden" ng-model="ctrl.user.id" />-->                       
+                  
                         <input type="hidden" name="username" value="${userSuccess.username}" />
                         <div class="row">
                             <div class="form-group col-md-12">
@@ -134,6 +135,7 @@
                         <div class="row">
                             <div class="form-actions floatRight">
                                 <input type="submit"  value="Aceptar" class="btn btn-primary btn-sm" >                                
+                                <a href="/">Salir</a>
                             </div>
                         </div>
                     </form>

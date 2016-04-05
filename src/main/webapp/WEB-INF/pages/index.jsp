@@ -15,7 +15,7 @@
                 <div class="formcontainer">
                     <fieldset>  
                         <p style="color:red;">${userError}<p>
-                        <form class="form-horizontal" method="post" action='/user/validate.htm' name="loginUser" id="loginUser">
+                        <form  class="form-horizontal" method="post" action='/user/validate.htm' name="loginUser" id="loginUser">
                             <div class="control-group">
                                 <label class="control-label">Usuario</label>
                                 <div class="controls">
