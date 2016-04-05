@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-        <title>Bootstrap Form With Spring Mvc Example</title>
+        <title>Prueba Conocimiento</title>
         <link href="/resources/css/bootstrap.css" rel="stylesheet"></link>  
         <link href="/resources/css/app.css" rel="stylesheet"></link>
     </head>

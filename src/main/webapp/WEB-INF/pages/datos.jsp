@@ -4,7 +4,7 @@
 
 <html>
     <head>  
-        <title>AngularJS $http Example</title>  
+        <title>Prueba Conocimiento</title>
         <style>
             .username.ng-valid {
                 background-color: lightgreen;
