@@ -5,7 +5,7 @@
     <groupId>com.prueba</groupId>
     <artifactId>prueba</artifactId>
     <version>1.0-SNAPSHOT</version>
-   <!-- <packaging>war</packaging>-->
+  <!-- <packaging>war</packaging>-->
 
     <name>prueba</name>
 
